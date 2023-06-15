@@ -40,6 +40,20 @@ public class PlayList {
         return "Song added Successfully";
     }
 
+    public String deleteSongFromPlayList(String songName) {
+        Song songToDelete = null;
+        for(Song song : songs) {
+            if(song.getName().equals(songName)) {
+                songToDelete = song;
+            }
+        }
+        if(songToDelete != null) {
+            songs.remove(songToDelete);
+            return songName+" is deleted Successfully";
+        } else {
+            return songName+" is not exists in PlayList";
+        }
+    }
     public String playNext() {
         if(wasNext) { // true
         }
@@ -77,7 +91,4 @@ public class PlayList {
         wasNext = true;
         return "current song is " + itr.next();
     }
-//    TODO: addSongByTrackNumber
-//    TODO: deleteSongFromPlayList
-//    TODO: add check if song in playlist already, don't add it and return relevant information
 }

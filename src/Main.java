@@ -1,9 +1,3 @@
-import java.util.HashMap;
-import java.util.Map;
-import java.util.TreeMap;
-
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
         Album album1 = new Album("Gloria","Sam Smith");
@@ -40,6 +34,5 @@ public class Main {
         //TODO: HomeWork
         // addSongByTrackNumber in playlist from album - keep both checks - Album & Playlist
         // add check if song in playlist already, don't add it and return relevant information - USE OPTIONAL PLS
-        // deleteSongFromPlayList
     }
 }
